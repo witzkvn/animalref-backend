@@ -1,0 +1,17 @@
+extends baseEmail
+
+block content
+  p Bonjour #{firstName},
+    p Bienvenue sur AnimalRef ! 😄
+    p Nous sommes ravis de vous accueillir sur notre site web. Vous allez découvrir de nombreuses informations et leurs références en lien à la cause animale et publiées par nos membres. N'hésitez pas à partager également vos informations ! 😉 
+    p A bientôt sur AnimalRef,
+    table.btn.btn-primary(role='presentation', border='0', cellpadding='0', cellspacing='0')
+      tbody
+        tr
+          td(align='left')
+            table(role='presentation', border='0', cellpadding='0', cellspacing='0')
+              tbody
+                tr
+                  td
+                    a(href=`${url}`, target='_blank') Découvrir des informations
+    p - L'équipe Vegmiam
