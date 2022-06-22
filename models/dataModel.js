@@ -33,12 +33,14 @@ const dataSchema = new mongoose.Schema(
       type: String,
       enum: {
         values: [
-          "chasse-peche",
+          "chasse",
+          "peche",
           "environnement",
           "nutrition",
-          "science",
+          "laboratoire",
           "traditions-loisirs",
-          "bienetre-biologie",
+          "biologie",
+          "produits",
           "autre",
         ],
         message:
